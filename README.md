@@ -150,19 +150,19 @@ Authorization: Bearer <ваш access токен>
 ## Модели данных
 
 ### Порода
-- **ID**: integer (только для чтения)
-- **Имя**: string (обязательно, maxLength: 100)
+- **pk**: integer (только для чтения)
+- **name**: string (обязательно, maxLength: 100)
 
 ### Кошка
-- **ID**: integer (только для чтения)
-- **Цвет**: string (обязательно, maxLength: 100)
-- **Возраст**: integer (обязательно)
-- **Описание**: string (обязательно, maxLength: 1000)
-- **Порода**: integer (обязательно)
-- **Пользователь**: integer (только для чтения)
-- **URL списка рейтингов**: string (только для чтения)
-- **Количество рейтингов**: string (только для чтения)
-- **Средний рейтинг**: string (только для чтения)
+- **pk**: integer (только для чтения)
+- **color**: string (обязательно, maxLength: 100)
+- **age**: integer (обязательно)
+- **description**: string (обязательно, maxLength: 1000)
+- **breed**: integer (обязательно)
+- **user**: integer (только для чтения)
+- **rating_list_url**: string (только для чтения)
+- **rating_count**: string (только для чтения)
+- **rating_average**: string (только для чтения)
 
 ### TokenObtainPair
 - **Имя пользователя**: string (обязательно)
